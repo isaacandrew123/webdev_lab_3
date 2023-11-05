@@ -10,6 +10,10 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
         }
 
         .header {
@@ -32,7 +36,7 @@
 
         .button-container {
             display: flex;
-            justify-content: center; /* Center the buttons horizontally */
+            justify-content: center;
             margin-top: 20px;
         }
 
@@ -48,7 +52,7 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
-            margin: 5px; /* Add spacing between buttons */
+            margin: 5px;
         }
 
         .button:hover {
@@ -66,15 +70,13 @@
         }
 
         .footer {
-            margin-top: 20px;
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
         }
 
         .footer-item {
-            margin: 5px; /* Add spacing between items in the footer */
+            margin: 5px;
         }
     </style>
 </head>
@@ -91,11 +93,11 @@
             <a href="campus_life.html" class="button">Campus Life</a>
             <a href="contact.html" class="button">Contact Me</a>
         </div>
-        <div class="footer">
-            <p class="footer-item">Isaac Andrew</p>
-            <p class="footer-item">AI210196</p>
-            <p class="footer-item">Web Development 2023-2024/1</p>
-        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-item">Isaac Andrew</p>
+        <p class="footer-item">AI210196</p>
+        <p class="footer-item">Web Development 2023-2024/1</p>
     </div>
 </body>
 </html>
