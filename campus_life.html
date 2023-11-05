@@ -25,9 +25,10 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center; /* Center everything within the container */
         }
 
-        .biodata-item {
+        .experience {
             margin-bottom: 20px;
             text-align: left;
             border-left: 5px solid #333;
@@ -35,9 +36,17 @@
             font-size: 18px;
         }
 
-        .biodata-label {
-            font-weight: bold;
-            margin-right: 10px;
+        .experience h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .experience-description {
+            margin-top: 10px;
+        }
+
+        .experience-image {
+            max-width: 100%;
         }
 
         .button-container {
@@ -81,7 +90,53 @@
     </div>
     <div class="container">
         <h2>Your Campus Life Experiences</h2>
-        <!-- Fill in your campus life experiences here -->
+
+        <!-- Campus Experience 1 -->
+        <div class="experience">
+            <h2>1. This is my apartment view</h2>
+            <div class="experience-description">
+                <p>I enjoy the beautiful view from my room's window. 
+                    My table is right next to the window, so i can take in the cool air and great view while working .</p>
+            </div>
+            <div class="experience-image">
+                <img src="apartment view.jpg" alt="Apartment View" width="1024" height="768">
+            </div>
+        </div>
+
+        <!-- Campus Experience 2 -->
+        <div class="experience">
+            <h2>2. This was when my parents came over to Johor to drop me off this semester</h2>
+            <div class="experience-description">
+                <p>Spending time with my parents when they visited me in Johor was a memorable experience.</p>
+            </div>
+            <div class="experience-image">
+                <img src="anyah amma faculty.jpg" alt="Parents' Visit" width="1024" height="768">
+            </div>
+        </div>
+
+        <!-- Campus Experience 3 -->
+        <div class="experience">
+            <h2>3. This is my church group</h2>
+            <div class="experience-description">
+                <p>Being part of a church group on campus has been a source of spiritual and social connection.
+                    P.S.: Im the person in the center xD
+                </p>
+            </div>
+            <div class="experience-image">
+                <img src="church grp pic.jpg" alt="Church Group" width="1024" height="768">
+            </div>
+        </div>
+
+        <!-- Campus Experience 4 -->
+        <div class="experience">
+            <h2>4. This is my friend, Puvendran feeding me my birthday cake during my 1st year</h2>
+            <div class="experience-description">
+                <p>Celebrating my birthday with friends and the tradition of cake feeding is a cherished memory from my first year.</p>
+            </div>
+            <div class="experience-image">
+                <img src="puvan bday.jpg" alt="Birthday Cake Celebration" width="960" height="1280">
+            </div>
+        </div>
 
         <div class="button-container">
             <a href="index.html" class="button">Back to Home</a>
