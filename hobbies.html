@@ -7,17 +7,14 @@
             font-family: Consolas, monospace;
             background-color: black;
             color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
+            text-align: center;
             margin: 0;
+            padding: 0;
         }
 
-        .header, .footer {
-            background-color: #333; /* Same color as the footer */
+        .header {
+            background-color: #222;
             padding: 20px 0;
-            text-align: center;
         }
 
         .header h1 {
@@ -89,6 +86,7 @@
         .hobby-image img {
             display: block;
             margin: 0 auto;
+            max-width: 100%;
         }
 
         .hobby-image img:hover:after {
@@ -105,37 +103,41 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Hobbies</h1>
+    </div>
     <div class="container">
-        <div class="header">
-            <h1>Hobbies</h1>
-        </div>
-
         <!-- Watching Movies Section -->
         <div class="hobbies-section">
             <h2>1. Watching Movies</h2>
-            <div class="hobby-image">
-                <img src="vijay kamal.jpg" alt="Joseph Vijay and Kamal Hassan" style="max-width: 70%;">
+            <div class="biodata-item">
+                <span class="biodata-label">I enjoy watching movies, especially those featuring my favorite actors Joseph Vijay(right) and Kamal Hassan(left).</span>
             </div>
-            <div class="hobby-description">
-                <p>I enjoy watching movies, especially those featuring my favorite actors Joseph Vijay(right) and Kamal Hassan(left). 
-                    Their performances are remarkable. Besides that, I'm also a fan of movies spanning different languages, 
-                    including English, Tamil, Spanish, Hindi, and Korean.</p>
+            <div class="biodata-item">
+                <span class="biodata-label">Their performances are remarkable. Besides that, I'm also a fan of movies spanning different languages, including English, Tamil, Spanish, Hindi, and Korean.</span>
+            </div>
+            <div class="hobby-image">
+                <img src="vijay kamal.jpg" alt="Joseph Vijay and Kamal Hassan">
             </div>
         </div>
 
         <!-- Watching Football Section -->
         <div class="hobbies-section">
             <h2>2. Watching Football</h2>
-            <div class="hobby-image" style="display: flex; justify-content: center;">
-                <div style="max-width: 70%;">
-                    <img src="ronaldo united madrid.jpeg" alt="Cristiano Ronaldo at Manchester United and Real Madrid">
-                </div>
+            <div class="biodata-item">
+                <span class="biodata-label">Watching football is another passion of mine, which started when I was 10.</span>
             </div>
-            <div class="hobby-description">
-                <p>Watching football is another passion of mine, which started when I was 10. 
-                    I particularly enjoy following teams like Manchester United(left) and Real Madrid(right). 
-                    This is mainly due to my favorite player, Cristiano Ronaldo, playing for them. 
-                    His incredible skills and dedication to the sport have always driven me in my life.</p>
+            <div class="biodata-item">
+                <span class="biodata-label">I particularly enjoy following teams like Manchester United(left) and Real Madrid(right).</span>
+            </div>
+            <div class="biodata-item">
+                <span class="biodata-label">This is mainly due to my favorite player, Cristiano Ronaldo, playing for them.</span>
+            </div>
+            <div class="biodata-item">
+                <span class="biodata-label">His incredible skills and dedication to the sport have always driven me in my life.</span>
+            </div>
+            <div class="hobby-image">
+                <img src="ronaldo united madrid.jpeg" alt="Cristiano Ronaldo at Manchester United and Real Madrid">
             </div>
         </div>
 
