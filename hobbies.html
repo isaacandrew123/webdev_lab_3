@@ -14,6 +14,16 @@
             margin: 0;
         }
 
+        .header, .footer {
+            background-color: #333; /* Same color as the footer */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -57,27 +67,76 @@
             background-color: #555;
         }
 
-        .footer {
+        .hobbies-section {
             text-align: center;
-            padding: 10px;
-            background-color: #333;
+            margin-bottom: 40px;
+        }
+
+        .hobbies-section h2 {
+            text-align: center;
+        }
+
+        .hobby-description {
+            margin-top: 20px;
+        }
+
+        .hobby-image {
+            max-width: 100%;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hobby-image img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .hobby-image img:hover:after {
+            content: attr(alt);
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 5px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hobbies</h1>
-        <!-- Fill in your hobbies here -->
-        <div class="biodata-item">
-            <span class="biodata-label">Hobby 1:</span> Your Hobby Description
+        <div class="header">
+            <h1>Hobbies</h1>
         </div>
 
-        <div class="biodata-item">
-            <span class="biodata-label">Hobby 2:</span> Your Hobby Description
+        <!-- Watching Movies Section -->
+        <div class="hobbies-section">
+            <h2>1. Watching Movies</h2>
+            <div class="hobby-image">
+                <img src="vijay kamal.jpg" alt="Joseph Vijay and Kamal Hassan" style="max-width: 70%;">
+            </div>
+            <div class="hobby-description">
+                <p>I enjoy watching movies, especially those featuring my favorite actors Joseph Vijay(right) and Kamal Hassan(left). 
+                    Their performances are remarkable. Besides that, I'm also a fan of movies spanning different languages, 
+                    including English, Tamil, Spanish, Hindi, and Korean.</p>
+            </div>
         </div>
 
-        <div class "biodata-item">
-            <span class="biodata-label">Hobby 3:</span> Your Hobby Description
+        <!-- Watching Football Section -->
+        <div class="hobbies-section">
+            <h2>2. Watching Football</h2>
+            <div class="hobby-image" style="display: flex; justify-content: center;">
+                <div style="max-width: 70%;">
+                    <img src="ronaldo united madrid.jpeg" alt="Cristiano Ronaldo at Manchester United and Real Madrid">
+                </div>
+            </div>
+            <div class="hobby-description">
+                <p>Watching football is another passion of mine, which started when I was 10. 
+                    I particularly enjoy following teams like Manchester United(left) and Real Madrid(right). 
+                    This is mainly due to my favorite player, Cristiano Ronaldo, playing for them. 
+                    His incredible skills and dedication to the sport have always driven me in my life.</p>
+            </div>
         </div>
 
         <div class="button-container">
