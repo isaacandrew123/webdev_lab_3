@@ -7,6 +7,11 @@
             font-family: Consolas, monospace;
             background-color: black;
             color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            margin: 0;
         }
 
         .container {
@@ -51,12 +56,17 @@
         .button:hover {
             background-color: #555;
         }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Personal Website</h1>
-        <h2>Hobbies</h2>
+        <h1>Hobbies</h1>
         <!-- Fill in your hobbies here -->
         <div class="biodata-item">
             <span class="biodata-label">Hobby 1:</span> Your Hobby Description
@@ -66,7 +76,7 @@
             <span class="biodata-label">Hobby 2:</span> Your Hobby Description
         </div>
 
-        <div class="biodata-item">
+        <div class "biodata-item">
             <span class="biodata-label">Hobby 3:</span> Your Hobby Description
         </div>
 
